@@ -873,3 +873,10 @@ z-index: 1 !important;
 padding: 20px 82px 0;
 min-height: 185px;
 }
+
+.p-12 {
+    padding: 2rem;
+}
+.mt-8 {
+    margin-top: 5rem;
+}
