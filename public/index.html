@@ -54,7 +54,7 @@
 
 </head>
 
-<body class="antialiased text-gray-700 bg-gray-100">
+<body class="antialiased text-gray-700 ">
 
 
     <a id="forkme_banner" href="https://github.com/essingen123/vue-quiz-simple-draft">View on GitHub</a>
@@ -103,7 +103,7 @@
                                 <label v-for="(answer, index) in questions[idx].answers" :key="index" :for="index"
                                     class="block mt-4 border border-gray-300 rounded-lg py-2 px-6 text-lg"
                                     :class="{'hover:bg-gray-100 cursor-pointer' : selectedAnswer == ''}, {'bg-green-200' : index == questions[idx].correctAnswer && selectedAnswer != ''}, {'bg-red-200' : selectedAnswer == index}">
-                                    <input ref="answers" outlined autofocus :id="index" type="radio" class="visible" :value="index"
+                                    <input ref="answers" outlined autofocus :id="index" type="radio" class="hidden" :value="index"
                                         @change="answered($event)" :disabled="selectedAnswer != ''">
                                     {{answer}}
                                 </label>

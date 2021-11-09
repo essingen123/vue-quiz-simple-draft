@@ -414,9 +414,9 @@ body {
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-width: 0 !important; /* 2 */
+  border-style: solid !important; /* 2 */
+  border-color: #e5e7eb !important; /* 2 */
 }
 
 /*
@@ -604,7 +604,7 @@ video {
 }
 
 .border {
-  border-width: 1px;
+  border-width: 1px !important;
 }
 
 .cursor-pointer {
